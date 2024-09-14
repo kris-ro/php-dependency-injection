@@ -1,0 +1,52 @@
+{
+  "services": {
+    "model": {
+      "class": "\\KrisRo\\PhpDatabaseModel\\Model"
+    },
+    "class_with_constructor_in_callable_string": {
+      "class": "\\KrisRo\\PhpDatabaseModel\\Model::_construct"
+    },
+    "class_with_specified_method_and_implicit_constructor": {
+      "class": "\\KrisRo\\PhpDatabaseModel\\Database",
+      "createConnection" : {
+        "credentials" : "#database"
+      }
+    },
+    "model_with_specified_method_and_array_argument": {
+      "class": "\\KrisRo\\Validator\\Validator",
+      "createRegexRules" : {
+        "rules": {
+          "alphanumeric": "/^[a-z0-9\\-_]+$/i"
+        }
+      }
+    },
+    "validator": {
+      "class": "\\KrisRo\\Validator\\Validator",
+      "_construct": {
+        "rules": {
+          "alphanumeric": "/^[a-z0-9\\-_]+$/i"
+        }
+      }
+    },
+    "class_with_config_key_as_argument": {
+      "class": "\\KrisRo\\Validator\\Validator",
+      "_construct": {
+        "rules": "#validator/rules"
+      }
+    },
+    "class_with_service_as_argument": {
+      "class": "\\KrisRo\\PhpDatabaseModel\\Model",
+      "_construct": {
+        "credentialsOrPDO": "@pdo"
+      }
+    },
+    "pdo": {
+      "class": "\\PDO",
+      "_construct": {
+        "dsn": "mysql:host=localhost;dbname=test",
+        "username": "k",
+        "password": "123456"
+      }
+    }
+  }
+}

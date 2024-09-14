@@ -1,0 +1,27 @@
+{
+    "name": "kris-ro/php-dependency-injection",
+    "description": "Dependency injection container for php",
+    "type": "library",
+    "require": {
+        "php": "8.*",
+        "kris-ro/php-config": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "kris-ro/php-database-model": "^1.0",
+        "kris-ro/validator": "^1.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "KrisRo\\PhpDependencyInjection\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "cristianradu",
+            "email": "kris_ro@yahoo.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}

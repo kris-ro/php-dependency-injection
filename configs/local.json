@@ -1,0 +1,14 @@
+{
+	"database": {
+		"host": "localhost",
+		"database": "test",
+		"username": "k",
+		"password": "123456",
+		"port": ""
+	},
+  "validator" : {
+    "rules": {
+      "alphanumeric": "/^[a-z0-9\\-_]+$/i"
+    }
+  }
+}
