@@ -106,6 +106,8 @@ Value of `rules` references `validator > rules` entry in configuration array.
 ## Usage
 Once the service is defined it is as simple as:
 ```php
+use KrisRo\PhpDependencyInjection\Container;
+
 # first build the configuration array. See more at https://github.com/kris-ro/php-config
 Container::buildConfig('/absolute/path/to/your/folder/with/json/files');
 
